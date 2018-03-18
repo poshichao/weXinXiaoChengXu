@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.93",
 	"appid": "wxd5781d22624ce308",
-	"projectname": "%E7%BA%A2%E5%B0%8F%E9%9D%92",
+	"projectname": "weChat",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
