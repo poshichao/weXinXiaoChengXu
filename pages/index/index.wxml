@@ -1,1 +1,2 @@
-hello world
+<view>{{text}}</view>
+<view>{{array[0].mes}}</view>
