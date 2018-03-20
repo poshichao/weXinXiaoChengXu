@@ -1,0 +1,39 @@
+.btn-area button {  
+  width: 100%;  
+}  
+  
+.section__title {  
+  background: #fbf9fe;  
+  width: 100%;   
+  height: 50px;  
+}  
+  
+.scroll-view-item {  
+  width: 100%;   
+  height: 100px;   
+}  
+  
+.scroll-view_H {  
+  white-space: nowrap;  
+  display:flex;  
+}  
+  
+.scroll-view-item_H {  
+  width: 150px;   
+  height: 150px;   
+  display:inline-block;  
+}  
+  
+.bc_green {  
+  background: green;  
+}  
+  
+.bc_red {  
+  background: red;  
+}  
+.bc_yellow {  
+  background: yellow;  
+}  
+.bc_blue {  
+  background: blue;  
+}  
