@@ -1,12 +1,14 @@
 /* pages/logs/logs.wxss */
-.body{
+
+.body {
   height: 100%;
-  background: #FFF;
+  background: #fff;
 }
-.header{
+
+.header {
   height: 240rpx;
   width: 100%;
-  background: #EE6363;
+  background: #ee6363;
 }
 
 .userinfo {
@@ -25,11 +27,17 @@
 }
 
 .userinfo-nickname {
-  margin-left:20rpx;
+  margin-left: 20rpx;
   font-size: 14px;
   font-style: bold;
   color: #000;
   position: fixed;
-  left:156rpx;
-  top:60rpx;
+  left: 156rpx;
+  top: 60rpx;
+}
+
+.btn-sign {
+  position: fixed;
+  right: 28rpx;
+  top: 28rpx;
 }
