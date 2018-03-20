@@ -1,12 +1,14 @@
 //index.js
 //获取应用实例
-const app = getApp()
+var base64 = require("../images/base64");
+const app = getApp();
 
 Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    icon:base64.icon01
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
