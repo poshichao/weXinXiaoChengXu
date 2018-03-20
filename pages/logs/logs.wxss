@@ -1,1 +1,35 @@
 /* pages/logs/logs.wxss */
+.body{
+  height: 100%;
+  background: #FFF;
+}
+.header{
+  height: 240rpx;
+  width: 100%;
+  background: #EE6363;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-left: 28rpx;
+  margin-top: 56rpx;
+  margin-bottom: 56rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-left:20rpx;
+  font-size: 14px;
+  font-style: bold;
+  color: #000;
+  position: fixed;
+  left:156rpx;
+  top:60rpx;
+}
