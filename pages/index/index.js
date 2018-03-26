@@ -1,18 +1,18 @@
 Page({
   data: {
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      '../images/test1.jpg',
+      '../images/test2.jpg',
+      // '../images/test3.jpg'
     ],
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
     duration: 1000,
     recommends: [{
-      message: '123',
+      message: '【热点互评】这次，武汉大学彻底怒了！你怎么看',
     }, {
-      message: '456',
+        message: '【经典新作】正在等你来……',
     }],
     array: [{
       message: [{
