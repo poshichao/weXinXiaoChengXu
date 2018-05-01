@@ -1,36 +1,51 @@
+<!-- 轮播图部分 -->
 <view class='container'>
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}" wx:key="*this">
       <swiper-item>
-        <image src="{{item}}" class="slide-image"/>
+        <image src="{{item}}" class="slide-image" />
       </swiper-item>
     </block>
   </swiper>
 </view>
 
-
+<!-- 本周推荐部分 -->
 <view class="weui-cells__title">
-  <text>本周推荐</text>
-  <view class="weui-cells">
-    <view wx:for="{{recommends}}" wx:key="*this">
-      <view class="weui-cell__bd">
-        <icon type='info' size='18'></icon>
-        <text space='nbsp'> {{item.message}}</text>
-      </view>
-    </view>
+  <text style='font-weight: 900; coler: black'>本周推荐</text>
+  <view class="weui-panel__bd">
+    <block wx:for="{{recommends}}" wx:key="*this">
+      <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{item.img}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title" style=''>{{item.title}}</view>
+          <view class="weui-media-box__desc">{{item.message}}</view>
+        </view>
+      </navigator>
+    </block>
   </view>
 </view>
 
-<view class="weui-cells__title">
-  <text>应用大全</text>
-  <view class='weui-cells'>
-    <view wx:for="{{array}}" wx:key="*this" class="boxView content-row">
-      <block wx:for="{{item.message}}" wx:key="*this" wx:for-item="ceshi">
-          <view class='content-col' style='flex:1;'>
-            <image class='img' src='{{ceshi.url}}' style="width:50px; height: 50px;"></image>
-            <text space='true' class='float'>{{ceshi.app}} </text>
-          </view>
+<!-- 应用大全部分 -->
+ <view class="weui-cells__title">
+  <text style='font-weight: 900'>应用大全</text>
+  <view class="page__bd">
+    <view class="weui-grids">
+      <block wx:for="{{grids}}" wx:key="*this">
+        <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="../images/tools_lecihuodong.png" />
+          <view class="weui-grid__label">{{item.app}}</view>
+        </navigator>
       </block>
     </view>
   </view>
+</view> 
+
+<!-- 页脚部分 -->
+<view class="weui-footer">
+  <view class="weui-footer__links">
+    <navigator url="" class="weui-footer__link">梦云智</navigator>
+  </view>
+  <view class="weui-footer__text">Copyright © 2017-2018 poshichao.github.io</view>
 </view>
