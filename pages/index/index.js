@@ -1,10 +1,8 @@
-var base64 = require("../images/base64");
-
 Page({
   data: {
     imgUrls: [
-      '../images/test1.jpg',
-      '../images/test2.jpg',
+      '/images/test1.jpg',
+      '/images/test2.jpg',
       // '../images/test3.jpg'
     ],
     indicatorDots: true,
@@ -14,31 +12,31 @@ Page({
     recommends: [{
       title: '【热点互评】',
       message: '这次，武汉大学彻底怒了！你怎么看',
-      img: '../images/comment.png',
+      img: '/images/comment.png',
     }, {
       title: '【经典新作】',
       message: '正在等你来……',
-      img: '../images/newarticle.png',
+      img: '/images/newarticle.png',
     }],
     grids: [
       {
         app: '热点互评',
-        url: '../images/tools_lecihuodong.png',
+        url: '/images/tools_lecihuodong.png',
       }, {
         app: '课堂助手',
-        url: '../images/tools_lecihuodong.png',
+        url: '/images/tools_lecihuodong.png',
       }, {
         app: '好文推荐',
-        url: '../images/tools_lecihuodong.png',
+        url: '/images/tools_lecihuodong.png',
       }, {
         app: '辩论大厅',
-        url: '../images/tools_lecihuodong.png',
+        url: '/images/tools_lecihuodong.png',
       }, {
         app: '公开课堂',
-        url: '../images/tools_lecihuodong.png',
+        url: '/images/tools_lecihuodong.png',
       }, {
         app: '始创发表',
-        url: '../images/tools_lecihuodong.png',
+        url: '/images/tools_lecihuodong.png',
       }
     ]
   },
@@ -61,12 +59,5 @@ Page({
     that.setData({
       'currentItem': id
     })
-  },
-  onReady: function () {
-    const ctx = wx.createCanvasContext('myCanvas')
-    ctx.setFillStyle('red')
-    ctx.setShadow(10, 50, 50, 'blue')
-    ctx.fillRect(10, 10, 150, 75)
-    ctx.draw()
   }
 })

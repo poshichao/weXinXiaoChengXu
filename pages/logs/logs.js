@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-var base64 = require("../images/base64");
+var base64 = require("../../images/base64");
 const app = getApp();
 
 Page({
@@ -46,5 +46,4 @@ Page({
       hasUserInfo: true
     })
   }
-
 })
